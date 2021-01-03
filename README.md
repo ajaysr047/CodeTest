@@ -6,6 +6,7 @@
 - Spring boot
 - Java FX
 - Java SceneBuilder
+- Embedded H2 Database(Spring)
 
 ## Current Functionalities
 - Add students/questions
