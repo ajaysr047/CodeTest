@@ -1,0 +1,46 @@
+.jfx-tab-pane *.tab-header-area *.tab-header-background {
+  -fx-background-color:#242424;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: white;
+}
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill:white;
+}
+
+/*.tab-pane {
+  -fx-tab-min-width:120px;
+  -fx-tab-max-width:120px;
+  -fx-tab-min-height:50px;
+  -fx-tab-max-height:50px;
+}*/
+
+/*.tab {
+  -fx-font-family: Arial;
+  -fx-font-size: 18;
+  -fx-background-color:#747474 ;
+}*/
+
+.tab:selected {
+    -fx-background-color:#242424 ;
+}
+
+/*.jfx-tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: -fx-secondary;
+}
+.jfx-tab-pane .tab .tab-label {
+    -fx-font-weight: normal;
+    -fx-text-fill: -fx-primatytext;
+    -fx-font-size: 16;
+}
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill :-fx-secondary;
+}
+.jfx-tab-pane .tab-selected-line{
+    -fx-stroke : -fx-secondary;
+}*/

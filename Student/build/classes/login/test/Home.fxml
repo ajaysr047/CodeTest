@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: #272727;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.test.HomeController">
+   <center>
+      <SplitPane dividerPositions="0.6869158878504673" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <JFXTextArea fx:id="codeArea" prefHeight="827.0" prefWidth="745.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <Pane prefHeight="108.0" prefWidth="745.0" style="-fx-background-color: #747474;" BorderPane.alignment="CENTER">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="513.0" layoutY="31.0" onAction="#handleSubmit" prefHeight="31.0" prefWidth="223.0" style="-fx-background-color: #747474;" text="Submit" textFill="#272727" />
+                        <JFXButton buttonType="RAISED" layoutX="212.0" layoutY="31.0" onAction="#handleRun" prefHeight="31.0" prefWidth="223.0" style="-fx-background-color: #747474;" text="Run" textFill="#272727" />
+                     </children></Pane>
+               </bottom>
+               <top>
+                  <Pane prefHeight="69.0" prefWidth="922.0" style="-fx-background-color: #747474;" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <JFXTextArea fx:id="outputArea" editable="false" focusColor="WHITE" style="-fx-background-color: white;" unFocusColor="WHITE" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Verdana Bold" size="24.0" />
+                           </font></JFXTextArea>
+                     </center>
+                     <top>
+                        <Pane prefHeight="68.0" prefWidth="745.0" style="-fx-background-color: #747474;" BorderPane.alignment="CENTER">
+                           <children>
+                              <JFXButton fx:id="getQues" buttonType="RAISED" layoutX="210.0" layoutY="19.0" onAction="#getQuestion" style="-fx-background-color: #747474;" text="Get Question" textFill="#272727" />
+                              <Label layoutX="431.0" layoutY="17.0" onMouseClicked="#handleClose" text="X" textFill="#242424">
+                                 <font>
+                                    <Font name="Verdana" size="28.0" />
+                                 </font>
+                              </Label>
+                           </children></Pane>
+                     </top>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <SplitPane dividerPositions="0.5356371490280778" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <items>
+                              <JFXTextArea fx:id="questionArea" editable="false" focusColor="WHITE" prefHeight="493.0" prefWidth="254.0" style="-fx-background-color: white;" unFocusColor="WHITE">
+                                 <font>
+                                    <Font name="Verdana" size="24.0" />
+                                 </font>
+                              </JFXTextArea>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                 <center>
+                                    <JFXListView fx:id="questionList" BorderPane.alignment="CENTER" />
+                                 </center>
+                                 <top>
+                                    <JFXTextField editable="false" focusColor="WHITE" style="-fx-background-color: #747474;" text="Question List" unFocusColor="WHITE" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </top>
+                              </BorderPane>
+                          </items>
+                        </SplitPane>
+                     </center>
+                  </BorderPane>
+               </items>
+            </SplitPane>
+         </items>
+      </SplitPane>
+   </center>
+</BorderPane>
