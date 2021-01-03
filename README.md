@@ -1,5 +1,5 @@
 # CodeTest
- A Java system application to conduct coding exams in lab
+ A Java system application to conduct coding exams in lab.
 
 ## Technologies used
 - Java 8
