@@ -1,5 +1,5 @@
 # CodeTest
- A Java System application to conduct coding exams in lab
+ A Java system application to conduct coding exams in lab
 
 ## Technologies used
 - Spring boot
@@ -15,7 +15,7 @@
 ## Future work
 - Redesign
 - Add support for addtional languages
-- Add sandbox execution for code
+- Add sandbox and controlled execution for code
 
 
 ## Demo
