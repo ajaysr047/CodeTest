@@ -2,6 +2,7 @@
  A Java system application to conduct coding exams in lab
 
 ## Technologies used
+- Java 8
 - Spring boot
 - Java FX
 - Java SceneBuilder
